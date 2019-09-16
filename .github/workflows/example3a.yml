@@ -8,7 +8,7 @@ jobs:
     
     steps:
     - name: Run a one-line script
-      uses: docker://hello-world:latest
+      uses: docker://alpine:latest
       with:
         entrypoint: /bin/echo
         args: Hello, world3!
