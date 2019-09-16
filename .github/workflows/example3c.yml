@@ -1,0 +1,14 @@
+name: example3c
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Run a one-line script
+      env:
+        MESSAGE: ${{ secrets.SECRET_MESSAGE }}
+      run: echo $MESSAGE
+        
