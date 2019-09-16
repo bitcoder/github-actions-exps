@@ -1,0 +1,14 @@
+name: example3a
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Run a one-line script
+      uses: docker://hello-world:latest
+      with:
+        entrypoint: /bin/echo
+        args: Hello, world3!
