@@ -1,0 +1,14 @@
+name: example3b
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Run a one-line script
+      uses: ./.github/actions/blabla
+      with:
+        entrypoint: /bin/echo
+        args: Hello, world3b!
