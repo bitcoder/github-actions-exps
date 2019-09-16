@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      uses: ./.github/actions/blabla
+      uses: ./.github/actions/say-hi
       with:
-        entrypoint: /bin/echo $INPUT_MESSAGE
-        message: Hello, world3b!
+        name: Sergio
+        message: How are you?
